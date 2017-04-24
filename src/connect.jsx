@@ -1,12 +1,15 @@
 import React from 'react';
 
-const Connect = (jPlayer, options, ConnectedPlayer) =>
+const Connect = (jPlayer, { options, playlistOptions }, ConnectedPlayer) =>
   class extends React.Component {
     static get jPlayer() {
       return jPlayer;
     }
     static get options() {
       return options;
+    }
+    static get playlistOptions() {
+      return playlistOptions;
     }
     static get childContextTypes() {
       return {

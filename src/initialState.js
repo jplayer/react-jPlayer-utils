@@ -1,10 +1,6 @@
 import merge from 'lodash.merge';
 
-import jPlayerInternalStatus from './jPlayer/internalStatus';
-import jPlayerDefaultStatus from './jPlayer/defaultStatus';
-import jPlayerDefaultOptions from './jPlayer/defaultOptions';
-
-const initialState = (connectedJPlayers, defaultValues) => {
+const initialState = (connectedJPlayers, defaultValues, optionsName) => {
   const jPlayers = {};
   let newConnectedJPlayers = connectedJPlayers;
 
@@ -15,7 +11,7 @@ const initialState = (connectedJPlayers, defaultValues) => {
   newConnectedJPlayers.forEach((connectedJPlayer) => {
     jPlayers[connectedJPlayer.options.id] = merge({}, {
       ...defaultValues,
-    }, connectedJPlayer.options);
+    }, connectedJPlayer[optionsName]);
   });
 
   return jPlayers;
