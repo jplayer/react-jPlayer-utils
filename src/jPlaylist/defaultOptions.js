@@ -3,4 +3,5 @@ export default {
   loopOnPrevious: false,
   shuffleOnLoop: true,
   enableRemoveControls: false,
+  loop: 'off',
 };

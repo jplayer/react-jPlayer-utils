@@ -2,6 +2,7 @@ import jPlayerDefaultOptions from './jPlayer/defaultOptions';
 import jPlayerDefaultStatus from './jPlayer/defaultStatus';
 import jPlayerInternalStatus from './jPlayer/internalStatus';
 import jPlaylistDefaultOptions from './jPlaylist/defaultOptions';
+import jPlaylistDefaultStatus from './jPlaylist/defaultStatus';
 import formats from './jPlayer/formats';
 import connect from './connect';
 import connectWithId from './connectWithId';
@@ -17,6 +18,7 @@ export {
   jPlayerDefaultStatus,
   jPlayerInternalStatus,
   jPlaylistDefaultOptions,
+  jPlaylistDefaultStatus,
   formats,
   connect,
   connectWithId,
