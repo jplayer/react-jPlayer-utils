@@ -1,8 +1,9 @@
 export default {
   autoPlay: false,
-  loopOnPrevious: false,
+  loopOnPrevious: true,
   shuffleOnLoop: true,
-  enableRemoveControls: false,
-  loop: 'off',
+  enableRemoveControls: true,
+  loop: 'loop-playlist',
   shuffled: false,
+  hidePlaylist: false,
 };
