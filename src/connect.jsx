@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Connect = (jPlayer, { options, playlistOptions }, ConnectedPlayer) =>
   class extends React.Component {
@@ -13,7 +14,7 @@ const Connect = (jPlayer, { options, playlistOptions }, ConnectedPlayer) =>
     }
     static get childContextTypes() {
       return {
-        id: React.PropTypes.string,
+        id: PropTypes.string,
       };
     }
     getChildContext = () => ({
