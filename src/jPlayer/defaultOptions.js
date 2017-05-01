@@ -7,6 +7,7 @@ export default {
   bufferColour: '#ddd',
   volume: 0.8,
   barDrag: true,
+  pauseOthersOnPlay: true,
   guiFadeHoldTime: 3000,
   media: {
     sources: {},
