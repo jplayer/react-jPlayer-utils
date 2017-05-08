@@ -24,7 +24,6 @@
     "test:watch": "npm test -- -w",
     "packages": "david",
     "packages:update": "david update",
-    "build": "rimraf lib && babel src --out-dir lib --ignore spec.js,spec.jsx",
     "preversion": "npm test && npm run lint",
     "version": "npm run build && git add -A dist",
     "postversion": "git push && git push --tags"
@@ -32,18 +31,6 @@
   "pre-commit": [
     "lint",
     "test"
-  ],
-  "browserslist": [
-    "chrome >= 15",
-    "firefox >= 15",
-    "explorer >= 9",
-    "edge >= 12",
-    "opera >= 16",
-    "safari >= 5.1",
-    "ios_saf >= 5.1",
-    "chromeAndroid >= 36",
-    "android >= 4",
-    "ie_mob >= 9"
   ],
   "nyc": {
     "extension": [
