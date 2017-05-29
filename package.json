@@ -5,12 +5,12 @@
   "author": "Martin Dawson <u1356770@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MartinDawson/react-jPlayer-utils.git"
+    "url": "https://github.com/jPlayer/react-jPlayer-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/MartinDawson/react-jPlayer-utils/issues"
+    "url": "https://github.com/jPlayer/react-jPlayer-utils/issues"
   },
-  "homepage": "https://github.com/MartinDawson/react-jPlayer-utils",
+  "homepage": "https://github.com/jPlayer/react-jPlayer-utils",
   "license": "MIT",
   "main": "./lib/index.js",
   "files": [
