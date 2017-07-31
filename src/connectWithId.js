@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { compose, getContext } from 'recompose';
 import PropTypes from 'prop-types';
 
-export default (...args) => compose(
+export default (mapStateToProps, mapDispatchToProps = {}, mergeProps) => compose(
   getContext({ id: PropTypes.string }),
-  connect(...args),
+  connect(mapStateToProps, mapDispatchToProps, mergeProps),
 );
