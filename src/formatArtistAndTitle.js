@@ -1,12 +1,12 @@
 export default (artist, title) => {
   let titleText = '';
 
-  if (artist !== '') {
+  if (artist !== null) {
     titleText += `${artist}`;
   }
 
-  if (title !== '') {
-    if (artist !== '') {
+  if (title !== null) {
+    if (artist !== null) {
       titleText += ' - ';
     }
     titleText += `${title}`;
