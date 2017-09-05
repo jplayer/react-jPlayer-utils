@@ -1,7 +1,6 @@
 import connect from './connect';
 import connectWithId from './connectWithId';
 import connectWithIndex from './connectWithIndex';
-import passWithIndex from './passWithIndex';
 import initialState from './initialState';
 import updateObject from './updateObject';
 import formatArtistAndTitle from './formatArtistAndTitle';
@@ -19,7 +18,6 @@ export {
   connect,
   connectWithId,
   connectWithIndex,
-  passWithIndex,
   initialState,
   updateObject,
   formatArtistAndTitle,
