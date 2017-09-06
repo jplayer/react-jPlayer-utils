@@ -2,7 +2,6 @@ import connect from './connect';
 import connectWithId from './connectWithId';
 import connectWithIndex from './connectWithIndex';
 import initialState from './initialState';
-import updateObject from './updateObject';
 import formatArtistAndTitle from './formatArtistAndTitle';
 import classes from './classes';
 import KeyControl from './components/keyControl';
@@ -19,7 +18,6 @@ export {
   connectWithId,
   connectWithIndex,
   initialState,
-  updateObject,
   formatArtistAndTitle,
   classes,
   KeyControl,
