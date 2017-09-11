@@ -26,7 +26,7 @@ const mapStateToProps = ({ jPlayers, jPlaylists }, { id }) => ({
 });
 
 class KeyControl extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     document.addEventListener('keydown', this.onKeyDown);
   }
   componentWillUnmount() {
