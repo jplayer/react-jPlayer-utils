@@ -18,12 +18,7 @@
     },
     "extends": "airbnb",
     "rules": {
-        "react/forbid-prop-types": "off",
-        "import/no-extraneous-dependencies": ["error", { "devDependencies": [
-            "jsdom.js",
-             "**/*.spec.*{js,jsx}",
-             "**/*.config.*js"
-        ] }]
+        "react/forbid-prop-types": "off"
     },
     "plugins": [
         "react"

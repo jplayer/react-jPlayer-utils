@@ -12,16 +12,13 @@
   },
   "homepage": "https://github.com/jPlayer/react-jPlayer-utils",
   "license": "MIT",
-  "main": "./lib/index.js",
+  "main": "./src/index.js",
   "files": [
     "lib",
     "src"
   ],
   "scripts": {
     "lint": "eslint --fix --ext .jsx,.js ./src",
-    "coverage": "cross-env BABEL_ENV=test nyc mocha src/**/*.spec.{js,jsx} --opts ./mocha.opts",
-    "test": "cross-env BABEL_ENV=test mocha src/**/*.spec.{js,jsx} --opts ./mocha.opts",
-    "test:watch": "npm test -- -w",
     "packages": "david",
     "packages:update": "david update",
     "build": "rimraf lib && babel src --out-dir lib --ignore spec.js,spec.jsx",
@@ -38,9 +35,6 @@
       ".jsx"
     ],
     "include": "src",
-    "exclude": [
-      "**/*.spec.{js,jsx}"
-    ],
     "require": [
       "babel-register"
     ],
