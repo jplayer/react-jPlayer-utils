@@ -3,6 +3,7 @@ node_js:
   - node
 script:
   - npm run lint
+  - npm run coverage
 cache:
   directories:
   - node_modules
