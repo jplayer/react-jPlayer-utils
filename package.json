@@ -24,6 +24,7 @@
     "test:watch": "npm test -- -w",
     "packages": "david",
     "packages:update": "david update",
+    "dist": "rimraf dist && webpack",
     "build": "rimraf lib && babel src --out-dir lib --ignore spec.js,spec.jsx",
     "preversion": "npm test && npm run lint",
     "version": "npm run build",
@@ -89,12 +90,8 @@
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
-    "lodash.merge": "^4.6.0",
     "prop-types": "^15.5.8",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
     "react-redux": "^5.0.4",
-    "recompose": "^0.25.0",
-    "redux": "^3.6.0"
+    "recompose": "^0.25.0"
   }
 }
