@@ -14,6 +14,7 @@
   "license": "MIT",
   "main": "./src/index.js",
   "files": [
+    "dist",
     "lib",
     "src"
   ],
