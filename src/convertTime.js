@@ -1,5 +1,5 @@
 export default (seconds, timeFormats) => {
-  if (isNaN(seconds)) {
+  if (Number.isNaN(seconds)) {
     return '';
   }
   const myTime = new Date(seconds * 1000);
